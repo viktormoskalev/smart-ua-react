@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.card-benefit{
+    color:white;
+ padding: 20px;
+    &-image{
+        img{
+            width: 100%;
+        }
+        margin: auto;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: $green;
+
+    }
+
+    &-title{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 900;
+    }
+    &-description{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $breakpoint-m) {
+
+    .card-benefit{
+
+            &-image{
+                height: 150px;
+                width: 150px;
+            }
+    }
+
+}
+@media screen and (min-width: $breakpoint-l) {
+
+    .card-benefit{
+
+            &-image{
+                height: 200px;
+                width: 200px;
+            }
+    }
+
+}
+   

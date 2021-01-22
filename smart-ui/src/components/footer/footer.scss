@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.footer{
+    background-color: black;
+    padding:50px 20px;
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    p{
+        margin-left: 20px;
+        font-size: 13px;
+        color: white;
+    }
+
+    &-logo{
+        text-align: center;
+        img{
+            width: 80px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: $breakpoint-m) {
+    .footer{
+        &-container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}

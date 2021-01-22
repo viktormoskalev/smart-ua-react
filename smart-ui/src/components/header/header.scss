@@ -1,0 +1,103 @@
+
+@import "../../variables.scss";
+
+
+
+.header{
+     background-color: rgb(0, 0, 0);    
+        transition: $header-animation-duration;
+        &-content{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        align-items: center;
+        }
+    &-login{
+        transition: $header-animation-duration;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        &-item{
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            line-height: 50px;
+
+        }
+    }
+        .logo{
+          transition: $header-animation-duration;
+            a{
+                display: flex;
+            }
+            margin-left: 70px;
+            margin-right: auto;
+            img{
+                object-fit: contain;
+                width: 80px;
+            height: auto;
+            }
+            width: 80px;  
+        }  
+}
+.btn-menu{
+    transition:$header-animation-duration;
+ 
+}
+
+.nav-open {
+    .header-login{
+        transform: translateX(100vw);
+    }
+
+        .logo{
+    transform: translateX(100vw);
+}
+
+    .btn-menu{
+transform: translate( 100vw);
+left:-70px;
+}
+
+.nav-menu{
+    transform: translateX(0);
+}
+
+}
+
+    
+@media screen and (min-width: $breakpoint-m) {
+
+    .header{
+        &-login{
+            &-item{
+                margin-left: 30px;
+            }
+         }
+        }
+
+
+
+}
+    
+
+@media screen and (min-width: $breakpoint-l) {
+
+    .header{
+
+        
+        
+            .logo{
+                margin: 0;
+                img{
+          
+                    width: $logowidth;
+        
+                }
+                width: $logowidth;  
+            }  
+    }
+
+
+}

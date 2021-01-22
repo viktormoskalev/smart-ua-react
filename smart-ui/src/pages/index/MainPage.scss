@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.hero{
+    background-image: url('../../img/placeholder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    padding: 100px 20px;
+    line-height: 2;
+    
+}
+
+.section{
+    padding: 70px 20px;
+    &-title{
+        text-align: center;
+
+    }
+    &-description{
+        text-align: center;
+    }
+}
+
+.section-about{
+    background-color: $salat;
+}
+
+.section-benefits{
+    .section-title{
+        color:$salat;
+    }
+}
+
+
+

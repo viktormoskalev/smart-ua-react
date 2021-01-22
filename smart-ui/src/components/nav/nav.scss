@@ -1,0 +1,159 @@
+@import '../../variables.scss';
+
+$nav-btn-color:#ffffff;
+$nav-hover:rgb(172, 144, 52);
+
+
+.nav {
+
+  
+
+    &-menu {
+        transition:$header-animation-duration;
+        display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+        z-index: 8;
+        top: 0;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        transform: translateX(-100%);
+    }
+    .sign-up-nav{
+text-align: center;
+
+        &-button{
+            transition:0.1s;
+            background-color:$green;
+            padding:10px 20px;
+            display: block;
+            border-radius: 10px;
+            color: #ffffff;
+            text-decoration:none;
+            &:hover{
+                background-color: darken($green , 8%);
+            }
+        }
+    }
+    &-item {
+        border-bottom:solid 3px #282c34;
+        font-weight: 800;
+        width: 100%;
+        text-align: left;
+        color:#ffffff;
+        text-decoration: none;
+        display: block;
+        padding: 20px 10px;
+        transition: 1s;
+        &:hover {
+       color:$green;
+            transition: 0.2s;
+        }
+    }
+    &-logo{
+        text-align: center;
+        img{
+            width: 90px;
+        }
+    }
+}
+.nav-stick-top{
+    width: 100%;
+}
+.nav-open {
+    .nav-item{
+       
+      
+    }
+    .nav-menu {
+
+    }
+
+    .btn-menu {
+
+        &-row {
+            margin: 0 !important;
+        }
+
+        &-row:nth-child(1) {
+            transform: translateY(100%) rotate(-45deg);
+        }
+
+        &-row:nth-child(2) {
+
+            opacity: 0;
+            width: 0;
+        }
+
+        &-row:nth-child(3) {
+            transform: translateY(-100%) rotate(45deg);
+        }
+    }
+}
+
+.btn-menu {
+    left:20px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+        transition: 0.2s;
+        background-color: $nav-btn-color;
+        height: 3px;
+        width: 100%;
+
+    }
+
+    &-row+&-row {
+
+        margin-top: 7px;
+    }
+}
+
+.sign-up-nav{
+ align-self: flex-end;
+  
+
+}
+
+
+@media screen and (min-width: $breakpoint-m) {}
+
+@media screen and (min-width: $breakpoint-l) {
+
+    .nav{
+&-item{
+    display: inline-block;
+    width: auto;
+    border:none;
+    font-size: 14px;
+  
+}
+        &-menu{
+            
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: static;
+            transform:none;
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: $breakpoint-xl) {}
+
+@media screen and (min-width: $breakpoint-xxl) {}
