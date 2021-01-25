@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+
+.main-swiper-slide{
+    img{
+        width: 200px;
+    }
+
+text-align: center;
+}
+
+.swiper-button-prev{
+   color:$green;
+}
+.swiper-button-next{
+   color:$green;
+}
+
+.swiper-container {
+    width: 200px;
+  }
+  
+
+
+  @media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }

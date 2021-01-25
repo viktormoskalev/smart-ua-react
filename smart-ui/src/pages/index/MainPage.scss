@@ -19,6 +19,7 @@
     }
     &-description{
         text-align: center;
+        margin: 20px 0;
     }
 }
 
@@ -27,10 +28,25 @@
 }
 
 .section-benefits{
+    .grid{
+        justify-content: space-around;
+    }
+    background-color: #fff;
+    color: black;
     .section-title{
         color:$salat;
     }
 }
 
+.section-our-people{
+   
+    background-color: $salat;
+}
 
-
+.section-join{
+    text-align: center;
+    background-color:$green;
+    .button{
+        margin-top: 20px;
+    }
+}

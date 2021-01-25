@@ -1,7 +1,7 @@
 import './nav.scss';
 import logo from '../../img/logo.png'
 
-function Nav(){
+function Nav(props){
 
     return (
 
@@ -10,6 +10,7 @@ function Nav(){
     <div className="nav-stick-top">
         <div className="nav-item hide-l nav-logo"><img src={logo} alt="logo"/></div>
        
+        
         <a href="#aboutus" className="nav-item"> About Us</a>
         <a href="#benefits" className="nav-item"> Benefits</a>
         <a href="#people" className="nav-item"> Our People</a>

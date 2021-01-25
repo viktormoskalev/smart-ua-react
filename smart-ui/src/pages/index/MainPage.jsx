@@ -1,6 +1,8 @@
 import './MainPage.scss';
 import benefitimg from '../../img/icon.png'
-import CardBenefit from '../../components/cards/CardBenefit'
+import CardBenefit from '../../components/cards/CardBenefit';
+import MainSwiper from '../../components/Slider/MainSwiper';
+import {Link} from 'react-router-dom';
 
 
 function Index() {
@@ -27,6 +29,11 @@ cards[3]= [
 cards[4]= [
     "degf fdf scription2",
     "hel dfflogfg  2",
+    benefitimg,
+]
+cards[5]= [
+    "intrestion title",
+    "amaizing ",
     benefitimg,
 ]
 
@@ -72,16 +79,30 @@ return(
     <section className="section section-benefits">
 
         <h2 className="section-title">Our Benefits</h2>
-
-            <div className="grid">
-
-
-
-               {cardrender}
-            
+<div className="container">
+<div className="grid">
+               {cardrender}  
             </div>
+</div>
+    
 
 
+    </section>
+
+    <section className="section section-our-people">
+        <div className="container">
+   <h2 className="section-title">Our People</h2>
+        {/* <MainPageSlider/> */}
+
+        <MainSwiper/>
+        </div>
+
+    </section>
+
+    <section className="section section-join">
+<h2 className="section-title">Join Our Talent Community</h2>
+<p className="section-description"> It is amaizing team</p>
+<Link className="button button-join" to="/Signup">Join Us</Link>
     </section>
 </>
 

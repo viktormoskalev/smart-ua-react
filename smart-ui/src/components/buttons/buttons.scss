@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+.button{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: inherit;
+display: inline-block;
+}
+
+.button-join{
+   
+    border:solid white 1px;
+    background-color: $salat;
+}
