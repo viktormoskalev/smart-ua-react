@@ -17,7 +17,7 @@ if(props.location.pathname!=="/"){
     setBtn({display:"none"});
 
 } else{
-    setAddNav(<Nav/>);
+    setAddNav(<Nav n={setNav} />);
 
     setBtn({display:"block"});
 }

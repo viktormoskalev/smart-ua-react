@@ -64,7 +64,7 @@ return(
         </div>
     </section>
 
-    <section id="aboutus" className="section section-about">
+    <section id="about" className="section section-about">
         <h2 className="section-title">
             About
         </h2>
@@ -76,7 +76,7 @@ return(
         </p>
     </section>
 
-    <section className="section section-benefits">
+    <section id="benefits" className="section section-benefits">
 
         <h2 className="section-title">Our Benefits</h2>
 <div className="container">
@@ -89,7 +89,7 @@ return(
 
     </section>
 
-    <section className="section section-our-people">
+    <section id="people" className="section section-our-people">
         <div className="container">
    <h2 className="section-title">Our People</h2>
         {/* <MainPageSlider/> */}
@@ -99,7 +99,7 @@ return(
 
     </section>
 
-    <section className="section section-join">
+    <section id="join" className="section section-join">
 <h2 className="section-title">Join Our Talent Community</h2>
 <p className="section-description"> It is amaizing team</p>
 <Link className="button button-join" to="/Signup">Join Us</Link>
